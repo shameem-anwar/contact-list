@@ -1,0 +1,10 @@
+<!-- Layout for contact list and contact details -->
+<div class="contact-screen">
+    <div class="contact-list">
+        <app-contacts (contactSelected)="handleContactSelected($event)"></app-contacts>
+    </div>
+    <div class="contact-detail">
+        <router-outlet></router-outlet>
+        <app-contact-detail [selectedContact]="selectedContact"></app-contact-detail>
+    </div>
+</div>

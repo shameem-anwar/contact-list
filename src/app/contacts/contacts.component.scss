@@ -1,0 +1,57 @@
+.contact-list-container {
+    .search-input {
+        width: 90%;
+        padding: 10px;
+        border: 1px solid grey;
+        border-radius: 5px;
+        margin-bottom: 10px
+    }
+    mat-list{
+        max-height: 570px;
+        overflow-y: auto;
+    }
+
+    mat-list-item {
+        margin-top: 10px;
+        margin-bottom: 20px;
+
+        &:hover {
+            background-color: #80808014;
+            cursor: pointer;
+        }
+
+        .contact-content {
+            display: flex;
+        }
+
+        .contact-item {
+            display: flex;
+            justify-content: space-between;
+
+            img {
+                margin-right: 16px;
+                width: 45px;
+                border-radius: 35px;
+            }
+
+            .contact-details {
+                margin-right: 20px;
+
+                h4,
+                p {
+                    margin: 0
+                }
+
+                P {
+                    font-size: 12px;
+                }
+            }
+
+            .contact-icons {
+                display: flex;
+                gap: 10px;
+                align-self: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,21 @@
+
+<div class="contact-list-container">
+    <mat-list>
+        <input type="text" class="search-input" placeholder="Search for contacts"  [formControl]="searchControl">
+        <mat-list-item *ngFor="let contact of filteredContactList" (click)="showContactDetails(contact)">
+            <div class="contact-item">
+                <div class="contact-content">
+                    <img matListAvatar [src]="contact.avatar" alt="Contact Image">
+                    <div class="contact-details">
+                        <h4>{{ contact.name }}</h4>
+                        <p>{{ contact.email }}</p>
+                    </div>
+                </div>
+                <div class="contact-icons">
+                    <mat-icon>message</mat-icon>
+                    <mat-icon>phone</mat-icon>
+                </div>
+            </div>
+        </mat-list-item>
+    </mat-list>
+</div>

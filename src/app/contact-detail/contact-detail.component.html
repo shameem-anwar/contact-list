@@ -1,0 +1,29 @@
+<div *ngIf="contact" class="main-container">
+    <div class="contact-details-container">
+        <div class="avatar-container">
+            <img [src]="contact.avatar" alt="Contact Image">
+        </div>
+        <div class="details-container">
+            <h2>{{ contact.name }}</h2>
+            <p>{{ contact.jobTitle }}</p>
+        </div>
+    </div>
+    <div class="bio-container">
+        <div class="detail">
+            <label>About</label>  
+            <p>{{ contact.bio }}</p>
+        </div>
+        <div class="detail">
+            <label>Email</label>
+            <p>{{ contact.email }}</p>
+        </div>
+        <div class="detail">
+            <label>Phone</label>
+            <p>{{ contact.phone }}</p>
+        </div>
+        <div class="detail">
+            <label>Meeting</label>
+            <p>{{ contact.meeting }}</p>
+        </div>
+    </div>
+</div>

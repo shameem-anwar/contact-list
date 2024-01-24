@@ -1,0 +1,17 @@
+.contact-screen {
+    display: flex;
+}
+
+.contact-list {
+    flex: 1;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.contact-detail {
+    flex: 2;
+    padding: 20px;
+    box-sizing: border-box;
+}
